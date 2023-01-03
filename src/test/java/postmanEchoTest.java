@@ -13,6 +13,6 @@ public class postmanEchoTest {
                 .post("/post")
                 .then()
                 .statusCode(200).log().ifValidationFails()
-                .body("data", is("some"));
+                .body("data", is("some data"));
     }
 }
